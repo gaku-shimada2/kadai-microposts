@@ -9,6 +9,7 @@
       </div>
     </div>
     <%= render 'relationships/follow_button', user: @user %>
+    <li class="nav-item"><a href="<%= likes_user_path(@user) %>" class="nav-link ">Favorites  <span class="badge badge-secondary"><%= @count_likes %></span></a></li>
   </aside>
   <div class="col-sm-8">
     <ul class="nav nav-tabs nav-justified mb-3">
